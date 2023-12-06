@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JS variables</title>
+</head>
+<body>
+    <h1>JavaScript Variables</h1>
+<p>Declared and assigned value and called through function</p>
+<p id="sample"></p>
+<script>
+    let car_name;
+    car_name="Ferrari";
+    document.getElementById("sample").innerHTML="Car Name: "+car_name;
+</script><hr>
+
+<p id="demo"></p>
+
+<script>
+x = 15;
+y = 6;
+z = x + y;
+document.getElementById("demo").innerHTML =
+"X=15, Y=6 the value of X+Y: " + z;
+</script><hr>
+
+<h2>Var variable </h2>
+<p id="var"></p>
+<script>
+var a = 5;
+var b = 9;
+var c = a + b;
+document.getElementById("var").innerHTML =
+"a=5, b=9 : The value of a + b is: " + c;
+</script><hr>
+
+<h2>let variable </h2>
+<p id="let"></p>
+<script>
+let num1 = 7;
+let num2= 5;
+let total = num1+ num2;
+document.getElementById("let").innerHTML =
+"num1 = 7, num2 = 5 : The addition of num1 & num2 is: " + total;
+</script><hr>
+
+<h2>Constant variable </h2>
+<p id="const"></p>
+<script>
+const p = 5;
+const q = 9;
+const r = p + q;
+document.getElementById("const").innerHTML =
+"P=14, Q=19 : The value of P + Q is: " + r;
+</script><hr>
+
+<p>The result of adding 2 + 3 + "5" is:</p>
+<p id="demo1"></p>
+<script>
+let x = 2 + 3 + " 5 ";
+document.getElementById("demo1").innerHTML = x;
+</script><hr>
+
+
+<p>The dollar sign is treated as a letter in JavaScript names.</p>
+<p id="doller"></p>
+<script>
+let $$$ = 2;
+let $myMoney = 5;
+document.getElementById("doller").innerHTML = $$$ + $myMoney;
+</script>
+
+</body>
+</html>

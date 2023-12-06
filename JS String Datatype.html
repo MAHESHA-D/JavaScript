@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript String DataType</title>
+</head>
+<body>
+    <h1>String Datatype</h1>
+    <h3>String Example</h3>
+ <p id="str"> </p>   
+    <script>       
+        let Name; //Declaration
+        Name="Aanand"; //Initialization
+        document.getElementById("str").innerHTML="Name is : "+ Name;
+    </script>
+
+    <h3>String Expressions</h3>
+    <p>JavaScript evaluates expressions from <b>left to right.</b> Different sequences can produce different results:</p>
+    <p id="str3"></p>
+    <script>
+    let x = "Volvo" + 16 + 4;
+    let y = 16+4;
+     let z = 16+4+"Volvo";
+    document.getElementById("str3").innerHTML = "Volvo+ 16 + 4 : "+ x+"<br>"+"16+4 : " +y+"<br>"+"16+4+Volvo : "+z;
+    </script>
+    
+    <h3> String Lenth </h3>
+<p id="str1"></p>
+ <script>
+        let alphabets="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("str1").innerHTML=alphabets+"<br>"+" length is : " +alphabets.length;
+</script>
+<h3>String Quotes</h3>
+<p id="str2"></p>
+<script>
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"'; 
+document.getElementById("str2").innerHTML = answer1 + "<br>" + answer2 + "<br>" + answer3; 
+</script>
+</body>
+</html>
