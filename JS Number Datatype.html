@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Number Datatype</title>
+</head>
+<body>
+    <h1>JavaScript Numbers</h1>
+
+    <p>Extra large or extra small numbers can be written with scientific (exponent) notation:</p>
+    
+    <p id="number"></p>
+    
+    <script>
+    let num1 = 3.14;
+    let num2 = 3;
+    let x = 123e5;
+    let y = 123e-5;
+    document.getElementById('number').innerHTML ="decimal : "+ num1+"<br>"+"number : "+num2 + "<br>" +
+     "scientific notation (e5) : "+ x+"<br>"+"scientific notation (-e5) : "+y;
+    </script>
+
+    <h3>Adding Numbers and String</h3>
+    <p id="demo"></p>
+    <script>
+    let t1 = "10";
+    let t2 = "20";
+    let t = t1+ t2;
+    let m=25;
+    let n=15;
+    let mn=m+n; //addition of literals
+    let tm=t1*t2; //mutliplication of string 
+    let ts=t1-t2; //substraction of String
+    let td=t2/t1; //Division of String
+    document.getElementById("demo").innerHTML = "concatinated 2 string : "+t +"<br>"+mn+"<br>"+"10-20 : "+ts+"<br>"+"10*20 : "+tm+"<br>"+"20/10 : "+td;
+    </script>
+</body>
+</html>
