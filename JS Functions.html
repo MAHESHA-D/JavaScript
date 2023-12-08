@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JS Functions And Events</title>
+    <title>JS Functions</title>
 <script>
         function myFunction() {
           document.getElementById("demo").innerHTML = "Paragraph changed.";
@@ -12,13 +12,36 @@
         <p id="demo">A Paragraph.</p>
         <button type="button" onclick="myFunction()">Try it</button>
         
-<h2>Demo JavaScript in Body</h2>
-<p id="demo1">A Paragraph</p>
-<button type="button" onclick="myFunction1()">Try it</button>
+<h2>JavaScript in Body</h2>
+
+<h1>JavaScript Functions</h1>
+<h2>Function return</h2>
+<p id="fun">function</p>
 <script>
-function myFunction1() {
-  document.getElementById("demo1").innerHTML = "Paragraph changed.";
+let f= myFunction1(10, 23); //function calling
+document.getElementById('fun').innerHTML="a=10, b=23 a*b is : "+f;
+function myFunction1(a, b){ //function declaration
+return a*b; //function return
 }
+</script>
+<h3>Convert Fahrenheit to Celsius:</h3>
+<p id="fun2"></p>
+<script>
+  let value=toCelsius(45);
+  function toCelsius(f){
+    return (5/9)*(f-32);
+  }  
+  document.getElementById('fun2').innerHTML="45 deg of Celsius = "+value+" Fahrenheit";
+</script><hr>
+
+<h2> Using functions as Variable Values</h2>
+<p id="fun_var"></p>
+<script>
+    let text = "The temperature is " + toCelsius(77) + " deg Celsius.";
+    document.getElementById("fun_var").innerHTML = text; 
+    function toCelsius(fahrenheit){
+    return (5/9) * (fahrenheit-32);
+  }
 </script>
 </body>
 </html>
