@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparison Operators</title>
+</head>
+<body>
+    <h1>JavaScript Comparison Operators</h1>
+
+    <h2>The == (Equal to) Operator</h2>
+    <h3>(X = = 5)</h3>
+<p id="compare"></p>
+<script>
+let x=5;
+let x1=x==5;
+let x2=x==8;
+let x3=x=="5";
+document.getElementById('compare').innerHTML="X=5 is : "+ x1+"<br>"+"X=8 is : "+x2+"<br>"+'X="5" is : '+x3;
+</script>
+<hr>
+<h2>The === (Equal Value and Equal type) Operator</h2>
+<h3> (N= = =8)</h3>
+<p id="compare2"></p>
+<script>
+    let n = 8;
+    n1=n===4;
+    n2=n===8;
+    n3=n==="8";
+    document.getElementById("compare2").innerHTML = "N===4 is : "+n1+"<br>"+"N===8 is : "+n2+"<br>"+'N==="8" is : '+n3;
+    </script>
+    
+<hr>
+<h2>The != Not Equal Operator</h2>
+<h3>(num != 6) </h3>
+<p id="compare3"></p>
+<script>
+let num = 6;
+let num1=num!=4;
+let num2=num!=6;
+document.getElementById("compare3").innerHTML = "num!=4 is : "+num1+"<br>"+"num!=6 is : "+num2;
+</script>
+
+<hr>
+<h2>The !== Not Equal and Not Equal type Operator</h2>
+<h3>(Num !== 5)</h3>
+<p id="compare4"></p>
+<script>
+let Num = 5;
+let Num1=Num!==5;
+let Num2=Num!==4;
+let Num3=Num!=="5";
+document.getElementById("compare4").innerHTML =  "Num!== 5 is : "+Num1+"<br>"+"Num!==4 is : "+Num2+"<br>"+'Num!=="5" is : '+Num3;
+</script>
+
+<hr>
+<h2>The >(greater than) <(less than) </h2>
+ <p> Number=5</p>
+<p id="compare5"></p>
+<script>
+let Number = 5;
+let Number1 = Number>6;
+let Number2 = Number<5;
+let Number3=Number>4;
+let Number4=Number<6;
+document.getElementById("compare5").innerHTML = "Number 5>6 is :"+Number1+"<br>"+"Number 5<5 is : "+Number2+"<br>"+
+"Number 5>4 is :"+Number3+"<br>"+"Number 5<6 is : "+Number4;
+</script>
+
+<hr>
+<h2>The >= (greater than equal) <= (lessthan equal) Operator</h2>
+<p> number = 8</p>
+<p id="compare6"></p>
+<script>
+    let number=8;
+    let number1=number>=8;
+    let number2=number<=8;
+    let number3=number>=9;
+    let number4=number<=7;
+    document.getElementById("compare6").innerHTML="number 8>=8 is : "+number1+"<br>"+"number 8<=8 is : "+number2+"<br>"+
+    "number 8>=9 is : "+number3+"<br>"+"number 8<=7 is : "+number4;
+    </script>
+    <hr>
+</body>
+</html>
