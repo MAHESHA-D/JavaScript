@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conditional Statements</title>
+</head>
+<body>
+<h1>Conditional Statements</h1>
+<h2>if Statement</h2>
+<p id="if">Good Evening!</p>
+
+<script>
+function ifstatement(){ //function declaration 
+    if (new Date().getHours() < 18) { //if condition
+  document.getElementById("if").innerHTML ="Good Day!!"; //condition is true it disply this
+}
+}
+ifstatement();//Function calling 
+</script>
+
+<h2>else Statement</h2>
+<p id="else"></p>
+<script>
+    function else_statement(){
+    const hour = new Date().getHours();
+let greeting;
+
+if (hour < 18) {
+  greeting = "Haha Good day !!";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("else").innerHTML = greeting;
+    }
+    else_statement(); //function calling
+</script>
+
+<h2>elseif Statement</h2>
+<input id="input" value="65"><!--taking input from keyboard-->
+<button onclick="elseif_statement()">RESULT</button> 
+<p id="elseif"></p>
+<script>
+    var result;
+function elseif_statement(){//function declaration
+  var marks =(document.getElementById("input").value);
+  if ((marks<35)) {
+    result = "Fail";
+  } 
+  else if(marks>=35&&marks<60){
+    result="Pass";
+}
+else if(marks>=60&&marks<75){
+    result="First class";
+}
+else if(marks>=75&&marks<90){
+    result="first Rank";
+}
+else if(marks>=90&&marks<=100){
+    result="Outstanding";
+}   
+else{
+    result="Invalid";
+}document.getElementById("elseif").innerHTML = "Result : "+marks +" is "+result;
+}
+  elseif_statement();//function calling(invoking)
+</script> <hr>
+<h2>Switch Condition</h2>
+<p id="switch"></p>
+<script>
+    let day;
+switch (new Date().getDay()){
+case 0:day="Sunday";
+break;
+case 1:day="Monday";
+break;
+case 2:day="Tuesday";
+break;
+case 3:day="Wednesday";
+break;
+case 4:day="Thursday";
+break;
+case 5:day="Friday";
+break;
+case 6:day="Saturday";
+break;
+default:
+    day="Waiting for weekend";
+}
+document.getElementById('switch').innerHTML=" Hey Today "+day;
+</script>
+</body>
+</html>
