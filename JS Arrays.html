@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Arrays</title>
+</head>
+<body>
+    <u><h1>JavaScript Arrays</h1></u>
+    <p id="arr1"></p>
+    <script>
+        const cars=['Tata','Toyoto','Mahindra','volvo'];
+    document.getElementById('arr1').innerHTML=cars;
+    </script>
+<h2>Changing array Element </h2>
+<p id="arr2"></p>
+<script>
+     const cars1=['Tata','Toyoto','Mahindra','volvo'];
+     cars1[3]="Honda";
+     document.getElementById('arr2').innerHTML=cars1[3];
+</script>
+<h2>Converting an array to String</h2>
+<p id="arr3"></p>
+<script>
+    const fruits=['Banana','Mango','Apple','Orange'];
+    document.getElementById('arr3').innerHTML=fruits.toString(fruits);
+</script>
+<h2>Arrays and Object difference</h2>
+<h4>Arrays can be accesed using Array Index</h4>
+<p id="arr4"></p>
+<script>
+    const person=['Mahesh','D',23];
+    document.getElementById('arr4').innerHTML="Person[0] : "+person[0];
+</script>
+<h4>Object use names to access its members</h4>
+<p id="arr5"></p>
+<script>
+const person1={firstname:'Mahesh',lastname:'D',age:23}
+document.getElementById('arr5').innerHTML="First name : "+person1.firstname;
+</script>
+<h2>Length Property</h2>
+<p id="length"></p>
+<script>
+const fruit=['Banana','Mango','Apple','Orange'];
+document.getElementById('length').innerHTML= fruit+" <br>"+"Fruit Array Length : "+fruit.length;
+</script>
+<h3>Accessing Array Element</h3>
+<p id="len"></p>
+<script>
+const Vegetables=['Radish','Potato','Carrot','Onion'];
+document.getElementById('len').innerHTML="Vegetable Array Elements : "+Vegetables+
+"<br> <br>"+"First Array Element : "+Vegetables[0]+"<br> <br>"+"Last Array Element : "+Vegetables[3];
+</script>
+<h2>Looping Array Elements</h2>
+<h3>Using For Loop</h3>
+<p id="for"></p>
+<script>
+    const bikes=['Honda','Hero','TVS','YAMAHA','Bajaj'];
+    let arr_len=bikes.length;
+    let text="<ul>";
+    for(let i=0;i<arr_len;i++)
+    {
+        text+="<li>"+bikes[i]+"</li>";
+    }
+    text+="</ul>";
+    document.getElementById('for').innerHTML=text;
+</script>
+<h3>Using ForEach</h3>
+<p id="foreach"></p>
+<script>
+    const bike=['Honda','Hero','TVS','YAMAHA','Bajaj'];
+    let arr_length=bike.length;
+    let text1="<ul>";
+    bike.forEach(myFunction);
+    text+="</ul>";
+    document.getElementById('foreach').innerHTML=text1;
+    function myFunction(value){
+        text1+="<li>"+value+"</li>";
+    }
+</script>
+</body>
+</html>
