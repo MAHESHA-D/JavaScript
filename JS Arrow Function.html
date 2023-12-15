@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Arrow Function</title>
+</head>
+<body>
+    <h1>The Arrow Function</h1>
+<p id="demo"></p>
+<script>
+let hello = "";
+hello = () => {
+  return "Hello World!";
+}
+document.getElementById("demo").innerHTML = hello();
+</script> <hr>
+
+<h3>Arrow Function with a parameter.</h3>
+<p id="arrow"></p>
+<script>
+let Hello = (val) => "Hello " + val;
+document.getElementById("arrow").innerHTML = Hello("Universe!");
+</script> <hr>
+
+<h3>Arrow Function Without Parentheses</h3>
+<p id="arrow1"></p>
+<script>
+ let greet = val => "Hello " + val;
+document.getElementById("arrow1").innerHTML = greet(" Everyone!!");
+</script> <hr>
+
+<h3>Arrow Function with This Keyword</h3>
+<p>Arrow functions the this keyword always represents the object that defined the arrow function</p>
+<button id="btn">Click Me!</button>
+<p id="arrow2"></p>
+<script>
+ let arrow = () => {
+  document.getElementById("arrow2").innerHTML += this;
+}
+//The window object calls the function:
+window.addEventListener("load", arrow);
+//A button object calls the function:
+document.getElementById("btn").addEventListener("click", arrow);
+</script> <hr>
+
+</body>
+</html>

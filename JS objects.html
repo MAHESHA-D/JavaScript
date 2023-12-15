@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Objects</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <p id="object"></p>
+    <script>
+    // Create an object:
+    const person = {
+      firstName: "Mahesh",
+      lastName: "D",
+      age: 24,
+      eyeColor: "brown"
+    };
+    // Display some data from the object:
+    document.getElementById("object").innerHTML =person.firstName + " is " + person.age + " years old.";
+    </script>
+     <h2>Object Methods</h2>
+     <p id="obj"></p>
+     <script>     
+        const person1 = {
+        firstName: "John",
+        lastName : "Doe",
+        address  : "Chennai",
+        age      :40,
+        fullName : function() {
+          return this.firstName + " " + this.lastName;
+        }
+      };
+// Display data from the object:
+document.getElementById("obj").innerHTML = "Person Full Name : "+person1.fullName()+"<br>"
++"Age : "+person1.age+"<br>"+" Address : "+person1.address;
+    </script>
+</body>
+</html>

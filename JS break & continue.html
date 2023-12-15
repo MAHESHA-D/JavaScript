@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Break and Continue </title>
+</head>
+<body>
+    <h1>Break and Continue Statements </h1>
+    <h2>Break Statement</h2>
+    <p>After number 3 it i value not print</p>
+<script>
+    let txt="";
+    for(let i=0; i<10;i++){
+        if(i===4){
+            break;
+        }
+        txt += i+"<br>";
+    }
+    document.write(txt);
+</script>
+
+<h2>Continue Statement</h2>
+<p>Number 5 will skip in this order</p>
+<script>
+let text="";
+for(let j=10;j>0;j--){
+    if(j===5){
+        continue;
+    }
+    text+=j+"<br>";
+}
+document.write(text);
+</script>
+</body>
+</html>

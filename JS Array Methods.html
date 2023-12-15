@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Methods</title>
+</head>
+<body>
+    <u><h1>Array Methods</h1></u>
+    <h2>The length Property</h2>
+<p>The length property returns the length of an array:</p>
+<p id="length"></p>
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let size = fruits.length;
+document.getElementById("length").innerHTML = fruits+'<br>'+" length of the array is "+size;
+</script> <hr>
+
+<h2>The toString() Method</h2>
+<p>The toString() method returns an array as a comma separated string:</p>
+<p id="string"></p>
+<script>
+const fruit = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("string").innerHTML = fruit.toString();
+</script> <hr>
+
+<h2>The join() Method</h2>
+
+<p>The join() method joins array elements into a string.</p>
+<p>It this example we have used " * " as a separator between the elements:</p>
+<p id="join"></p>
+<script>
+const fruit1 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("join").innerHTML = fruit1.join(" * ");
+</script> <hr>
+
+<h2>The pop() Method</h2>
+<p>The pop() method removes the last element from an array.</p>
+<p id="pop1"></p>
+<p id="pop2"></p>
+<script>
+const cars = ["BMW", "VOLVO", "TATA", "KIA"];
+document.getElementById("pop1").innerHTML = cars;
+cars.pop();
+document.getElementById("pop2").innerHTML = cars;
+</script> <hr>
+
+<h2>The push() Method</h2>
+<p>The push() method appends a new element to an array:</p>
+<p id="push1"></p>
+<p id="push2"></p>
+<script>
+const Fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("push1").innerHTML = Fruits;
+Fruits.push("Kiwi");
+document.getElementById("push2").innerHTML = Fruits;
+</script> 
+
+<h2>Push method using length Property</h2>
+<p>The length property provides an easy way to append new elements to an array without using the push() method:</p>
+<p id="push3"></p>
+<p id="push4"></p>
+<script>
+const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("push3").innerHTML = fruits2;
+fruits2[fruits2.length] = "Kiwi";
+document.getElementById("push4").innerHTML = fruits2;
+</script> <hr>
+
+<h2>The shift() Method</h2>
+<p>The shift() method removes the first element of an array (and "shifts" the other elements to the left):</p>
+<p id="shift1"></p>
+<p id="shift2"></p>
+<script>
+const Fruit = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("shift1").innerHTML = Fruit;
+Fruit.shift();
+document.getElementById("shift2").innerHTML = Fruit;
+</script> <hr>
+
+<h2>The unshift() Method</h2>
+<p>The unshift() method adds new elements to the beginning of an array:</p>
+<p id="unshift1"></p>
+<p id="unshift2"></p>
+<script>
+const color = ["Blue", "Orange", "Pink", "Red"];
+document.getElementById("unshift1").innerHTML = color;
+color.unshift("Green");
+document.getElementById("unshift2").innerHTML = color;
+</script> <hr>
+
+<h2>Changing Array element</h2>
+<p>Array elements are accessed using their index number:</p>
+<p id="Demo1"></p>
+<p id="Demo2"></p>
+<script>
+const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("Demo1").innerHTML = fruits1;
+fruits1[0] = "Kiwi";
+document.getElementById("Demo2").innerHTML = fruits1;
+</script> <hr>
+
+<h2>The delete Method</h2>
+<p>Deleting elements leaves undefined holes in an array:</p>
+<p id="delete1"></p>
+<p id="delete2"></p>
+<script>
+const grocery = ["Ragi", "Wheet", "Rice", "Sugar"];
+document.getElementById("delete1").innerHTML =
+"The grocery array elements is: " + grocery;
+delete grocery[3];
+document.getElementById("delete2").innerHTML = grocery;
+</script> <hr>
+
+<h2>The concat() Method</h2>
+<p>The concat() method merges (concatenates) arrays:</p>
+<p id="concat1"></p>
+<script>
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+document.getElementById("concat1").innerHTML = "Girls = "+myGirls +" &  Boys = "+myBoys +"<br> After Concatinating is : "+myChildren;
+</script>
+<h2>Concatinating 3 Arrays</h2>
+<p id="concat2"></p>
+<script>
+const array1 = ["Cecilie", "Lone"];
+const array2 = ["Emil", "Tobias", "Linus"];
+const array3 = ["Robin", "Morgan"];
+const myChildren1 = array1.concat(array2, array3); 
+document.getElementById("concat2").innerHTML = array1+"<br>"+array2+"<br>"+array3+"<br> After Concatinating : "+myChildren1;
+</script>
+
+<h3>The concat() method can merge string values to arrays:</h3>
+<p id="concat3"></p>
+<script>
+const myArray = ["Emil", "Tobias", "Linus"];
+const myChild = myArray.concat("Peter"); 
+document.getElementById("concat3").innerHTML = myArray+"<br>"+myChild;
+</script> <hr>
+
+<h2>The flat() Method</h2>
+<p id="flat"></p>
+<script>
+const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat();
+document.getElementById("flat").innerHTML = newArr;
+</script> <hr>
+
+<h2>The splice() Method</h2>
+<p>The splice() method adds new elements to an array:</p>
+<p id="splice1"></p>
+<p id="splice2"></p>
+<script>
+const Colors = ["Blue", "Orange", "Pink", "Red"];
+document.getElementById("splice1").innerHTML = Colors;
+Colors.splice(2, 0, "Purple", "Yellow");
+document.getElementById("splice2").innerHTML = Colors;
+</script> <hr>  
+
+<p>The splice() method adds new elements to an array, and returns an array with the deleted elements (if any):</p>
+<p id="splice3"></p>
+<p id="splice4"></p>
+<p id="splice5"></p>
+<script>
+const fruit3 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("splice3").innerHTML = "Original Array:<br> " + fruit3;
+let removed = fruit3.splice(2, 2, "Lemon", "Kiwi"); 
+document.getElementById("splice4").innerHTML = "New Array:<br>" + fruit3;
+document.getElementById("splice5").innerHTML = "Removed Items:<br> " + removed; 
+</script> <hr>
+
+<h2>The slice() Method</h2>
+<p>Slice out a part of an array starting from array element 1 ("Orange"):</p>
+<p id="slice"></p>
+<script>
+const fruits4 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits4.slice(1);
+document.getElementById("slice").innerHTML = fruits4 + "<br><br> slice(1) : " + citrus;
+</script> <hr>
+
+<p>When the slice() method is given two arguments, it selects array elements from the start argument,
+     and up to (but not included) the end argument:</p>
+<p id="slice1"></p>
+<script>
+const fruits5 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus1 = fruits5.slice(1,3);
+document.getElementById("slice1").innerHTML = fruits5 + "<br><br> slice(1,3) : "  + citrus1;
+</script> <hr>
+
+</body>
+</html>
